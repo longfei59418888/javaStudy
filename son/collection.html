@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{padding: 10px 0;overflow: hidden;list-style: none}
+        li{margin-top: 15px;padding-left: 50px;}
+        input{line-height: 25px;border: none;border-bottom: 1px solid #ccc;min-width: 550px;}
+        :focus{outline: -webkit-focus-ring-color auto 0px;}
+        .anser{line-height: 25px;font-size: 12px;display: none}
+    </style>
+</head>
+<body>
+    <ul></ul>
+    <div style="height: 500px;"></div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../data/collection.js"></script>
+    <script>
+        $(function () {
+            list.forEach(function (v,i) {
+                $('ul').append('<li><div class="item"><p class="quest">'+(i+1)+'、'+v.quest+'</p>' +
+                    '<input type="text"> <p class="anser">'+v.anser+'</p></div></li>')
+            })
+            $('ul').delegate('input:focus','keydown',function (e) {
+                if(e.keyCode != 13) return
+                var _this  = $(this);
+                if(_this.val().length<1) return;
+                if(_this.val() == _this.siblings('.anser').text()){
+                    _this.siblings('.anser').show()
+                    _this.siblings('.anser').show().css('color','#666')
+                }else if(_this.val() != _this.siblings('.anser').text()){
+                    _this.siblings('.anser').show().css('color','#EF734A')
+                }
+
+            })
+        })
+    </script>
+</body>
+</html>

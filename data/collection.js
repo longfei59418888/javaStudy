@@ -1,0 +1,25 @@
+var list =
+    [
+        {"quest":"集合","anser":"collection(Collection c),collection(int i)"},
+        {"quest":"集合-添加","anser":"add(E e),addAll(Collection<?> c)"},
+        {"quest":"集合-移除","anser":"remove(E e),removeAll(Collection<?> c)"},
+        {"quest":"集合-大小/长度","anser":"size()"},
+        {"quest":"集合-返回数组","anser":"toArray()"},
+        {"quest":"集合-迭代器","anser":"iterator()"},
+        {"quest":"集合-迭代器-方法","anser":"是否有下一个-hasNext()，下一个-next()，上一个-previous()"},
+        {"quest":"集合-遍历","anser":"for(type element:array){element},"},
+        {"quest":"集合-是否包含","anser":"contains(Object o),containsAll(Collection<?> c)"},
+        {"quest":"List","anser":"可重复，有索引，类数组，抽象类"},
+        {"quest":"List-ArrayList-LinkedList","anser":"ArrayList-实现一个数组，LinkedList-最佳顺序存取，适合插入和移除元素。"},
+        {"quest":"set","anser":"不可重复，无索引，抽象类"},
+        {"quest":"set-HashSet-TreeSet","anser":"HashSet-set的实现类，TreeSet-二叉树序数"},
+        {"quest":"Map","anser":"键值对"},
+        {"quest":"Map-HashMap","anser":"实现了类"},
+        {"quest":"Map-将Map中所有的键存入到set集合中","anser":"keySet()，set有迭代器"},
+        {"quest":"Map-此映射中包含的映射关系的 Set 视图","anser":"entrySet()，set有迭代器"},
+        {"quest":"Map-entry方法","anser":"getKey()-得到key,getValue()-得到value"},
+        {"quest":"Vector和ArrayList","anser":"Vector-数据多，同步线程安全，ArrayList-快，异步"},
+        {"quest":"泛型例子","anser":"List &lt;String&gt; list = new ArrayList&lt;String&gt;()"},
+        {"quest":"集合工具类方法","anser":"sort(list)-排序,swap(list,2,3)-交换元素，max(list)-最大值，binarySearch(list,'s')-二分查找，先排序," +
+        "shuffle(list)-随机，syschronzeList(list)-同步"},
+    ]
