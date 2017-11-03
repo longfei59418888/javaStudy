@@ -1,0 +1,20 @@
+var list =
+    [
+        {"quest":"容器属性-方向","anser":"flex-direction:row(水平左开始)，row-reverse(水平右开始)，column(垂直上开始)，column-reverse(垂直下开始)"},
+        {"quest":"容器属性-是否换行","anser":"flex-wrap:nowrap(不换行)，wrap(换行第一个在上面)，wrap-reverse(换行第一个在下面)"},
+        {"quest":"容器属性-方向换行","anser":"flex-flow:d r"},
+        {"quest":"容器属性-主轴排列方式","anser":"justify-content:flex-start,flex-end,center"},
+        {"quest":"容器属性-主轴排列方式","anser":"justify-content:space-between(两端对齐,item间隔相等),space-around(两端小间隔，item有相等的大间隔)"},
+        {"quest":"容器属性-交叉轴","anser":"align-item:flex-start,flex-end,center"},
+        {"quest":"容器属性-交叉轴","anser":"align-item:baseline(已第一个行字对齐)，stretch(铺满高度)"},
+        {"quest":"容器属性-多根轴线的对齐","anser":"align-content:flex-start，flex-end,center"},
+        {"quest":"容器属性-多根轴线的对齐","anser":"align-content:stretch(每行平均平铺)，"},
+        {"quest":"Item属性-顺序","anser":"order:1"},
+        {"quest":"Item属性-放大比例","anser":"flex-grow:0(z整个的比例)"},
+        {"quest":"Item属性-缩小比例","anser":"flex-shrink:0(咱整个的比例)"},
+        {"quest":"Item属性-单个项目","anser":"align-self:auto,flex-start,flex-end,center,baseline,stretch"},
+        {"quest":"继承方式-原型","anser":"Sam.prototype = new Person();Sam.prototype.name=''"},
+        {"quest":"继承方式-构造函数","anser":"{Person.call(this)[this会在Person中赋值];this.name=''}"},
+        {"quest":"继承方式-实例继承","anser":"{son =  new Person();son.name='';return son}"},
+        {"quest":"继承方式-实例继承","anser":"{son =  Object.create(new Person());son.name='';return son}"},
+    ]
