@@ -30,4 +30,5 @@ var list =
         {"quest":"vue-react不同相同","anser":"检查机制不同(template,object),开发风格(JSX,template),"},
         {"quest":"vue-angular相同","anser":"双向绑定，都有检查机制，都是代码复用"},
         {"quest":"vue-angular不相同","anser":"组件和mvc，更新机制(vue队列)，大小"},
+        {"quest":"vue生命周期","anser":"beforeCreate[观察数据,初始化事件],created,beforeMount,mounted,"},
     ]
