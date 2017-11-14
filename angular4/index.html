@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width,viewport-fit=cover">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0;padding: 0}
+    ol{padding-left: 20px;}
+    body{margin: 10px;font-size: 12px;color: #666;}
+    .question{position: relative;left: -5px;color: red;padding: 3px 0;display: none;}
+</style>
+<body>
+    <ol>
+        <li><p class="answer">装饰器的作用？</p>
+            <p class="question">用来修饰JS类的，他们把元数据添加到类上。</p></li>
+        <li><p class="answer">@NgModule装饰器的参数？</p>
+            <p class="question">
+                0、有bootstrap为根组件模块，参数绑定在全局<br/>
+                1、declarations(视图类,组件/指令/管道)<br/>
+                2、exports(子集，可用于其他模板/指令)<br/>
+                3、imports(其他模块)<br/>
+                4、providers(注入的服务列表)<br/>
+                5、bootstrap(根组件宿主)
+            </p></li>
+    </ol>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('p').click(function (e) {
+                $(this).siblings('p').show();
+            })
+        })
+    </script>
+</body>
+</html>
